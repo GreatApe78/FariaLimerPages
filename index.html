@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/380460/nft-sign.svg" type="image/x-icon">
+    <title>Faria Limer</title>
+</head>
+
+<body>
+    <header class="topoDoSite">
+        <img src="https://www.svgrepo.com/show/380464/nftbidding-digital-investing-system-security.svg" alt=""
+            style="width: 100px;display: block;margin: 10px;">
+        <span
+            style="font-size: 40px;text-align: center;font-weight: bold;color: white;display: block;margin: 10px;">Purchase
+            your FariaLimer!</span>
+        <a id="linkOPenSea" class="linkToOpenSea" href="https://testnets.opensea.io/assets/goerli/" target="_blank">View
+            asset on Open Sea</a>
+        <button id="connectWalletBtn">Connect Wallet</button>
+    </header>
+    <main>
+        <div class="container">
+            <p id="countdown_clock"></p>
+            <img src="" alt="nft_image" id="token_image">
+            <p id="token_id"></p>
+            <p>Leader: <span id="highest_bidder"></span></p>
+            <p>Highest bid = <span id="highest_bid"></span> ETH</p>
+            <button id="bid_button">Bid</button>
+            <input type="number" placeholder="amount" step="0.001" min="0" id="bid_input">
+            <button id="new_auction_button">New Auction</button>
+        </div>
+        <div class="records-container">
+            <h1 style="text-align:center;">Record of Bids</h1>
+            <ol id="caixaListaBidders" class="biddingListContainer" reversed>
+
+
+            </ol>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.2/web3.min.js"
+        integrity="sha512-Ls8WO4Esu7Jb9a92BfIp1Ftgl9t5Ncaa/6zKzpOkTGXW+dPcJcI4Yz2HR7cXY0YcfIAsL7R9Gqfbw8ERX8iYaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js" ></script>
+</body>
+
+</html>
